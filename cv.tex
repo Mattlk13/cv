@@ -33,7 +33,7 @@
 % personal data
 \firstname{Savvas}
 \familyname{Dalkitsis}
-\title{Mobile Software Engineer}               % optional, remove the line if not wanted
+\title{Senior Software Engineer}               % optional, remove the line if not wanted
 \address{10 Orchid Street}{W12 0SY, London, Hammersmith}    % optional, remove the line if not wanted
 \mobile{+44 7903432695}                     % optional, remove the line if not wanted
 %\phone{+2~(345)~678~901}                      % optional, remove the line if not wanted
@@ -104,7 +104,27 @@
 %\cvitem{description}{Short thesis abstract}
 \section{Experience}
 \cventry
-  {04/2011-Now}
+  {04/2013-Now}
+  {Senior Software Engineer}
+  {\href{www.shazam.com}{Shazam Entertainment}\superscript{1}}
+  {London}
+  {}
+  {
+  Main achievements:
+    \begin{itemize}%
+    \item Played instrumental role in shaping our new Test Driven philosophy, having created a \href{https://github.com/shazam/gwen}{library}\superscript{2} that enables us to write our own domain specific language that describes our acceptance tests.
+    \item Have been actively involved in our recruitment process, attending many recruiting events, conference talks promoting the company, preparing interview questions and online tests and finally interviewing candidates.
+    \item Promoted inter-team communication and code sharing (mainly through the DSL library which is now the de-facto way of writing acceptance tests for all the Java teams in Shazam)
+    \item Involved heavily in the complete rewrite of the Shazam application to use the latest Android API's, heavily re-factoring our code base to increase modularity and decrease dependencies. This was also a complete redesign of the app with tablet support.
+    \item Have also taken the responsibility of leading the team in the absence of our regular team lead, making sure the developers did not have any issues blocking their every day work, managing expectations of our stakeholders while trying to release a major rewrite with a tight deadline.
+    \end{itemize}
+    \emph{Technologies used: \textbf{Java, Android, Maven, git, SQLite, TDD, Gwen}}\newline{}%
+    \emph{Supporting software used: \textbf{IntelliJ, Jenkins, Jira, Fisheye, Sonar}}
+  }
+  
+\section{Experience}
+\cventry
+  {04/2011-04/2013}
   {Mobile Software Engineer (Android)}
   {\href{www.shazam.com}{Shazam Entertainment}\superscript{1}}
   {London}
@@ -121,19 +141,15 @@
     \item 3D lyrics visualizations for the product's LyricPlay\texttrademark  feature (written in C++)
     \end{itemize}
     Employed Test Driven Development to implement features in the client.\newline{}%
-    Created a thin library to facilitate writing of Acceptance Tests in a Given-When-Then syntax that both benefit the product owner and QA due to it's English-like syntax and helps the development team define the domain of each feature more explicitly.\newline{}%
-    Forked and contributed to android open source project \href{https://github.com/shazam/robolectric}{Robolectic}\superscript{2}\newline{}%
+    Forked and contributed to android open source project \href{https://github.com/shazam/robolectric}{Robolectic}\superscript{3}\newline{}%
     \emph{Technologies used: \textbf{Java, Android, Maven, git, SQLite, TDD, C++, regex, JBehave}}\newline{}%
-    \emph{Supporting software used: \textbf{IntelliJ, Bamboo, Jenkins, Jira, Fisheye}}
+    \emph{Supporting software used: \textbf{IntelliJ, Bamboo, Jenkins, Jira, Fisheye, Sonar}}
   }
   
-\urlfootnote{1}{http://www.shazam.com}
-\urlfootnote{2}{https://github.com/shazam/robolectric}
-
 \cventry
   {01/2009-04/2011}
   {Software Engineer}
-  {\href{www.hamptondata.com}{Hampton Data Services}\superscript{3}}
+  {\href{www.hamptondata.com}{Hampton Data Services}\superscript{4}}
   {London}
   {}
   {  
@@ -145,7 +161,6 @@
     \item Modernised deployment process by setting up Continuous Integration and one click delivery from source to final product (DVD)
     \end{itemize}
   }
-\urlfootnote{3}{http://www.hamptondata.com}
 
 % hack to get space between page footnotes and bottom info panel
 \blfootnote{}
@@ -173,7 +188,7 @@
 \cventry
   {06/2008-01/2009}
   {Systems Administrator}
-  {\href{www.eglobal.gr}{eGlobal Internet Stations}\superscript{4}}
+  {\href{www.eglobal.gr}{eGlobal Internet Stations}\superscript{5}}
   {Thessaloniki}
   {}
   {
@@ -185,13 +200,18 @@
     \item Assistance to users
     \end{itemize}
   }
-\urlfootnote{4}{http://www.eglobal.gr}
+    
+\urlfootnote{1}{http://www.shazam.com}
+\urlfootnote{2}{https://github.com/shazam/gwen}
+\urlfootnote{3}{https://github.com/shazam/robolectric}
+\urlfootnote{4}{http://www.hamptondata.com}
+\urlfootnote{5}{http://www.eglobal.gr}
 
 % hack to get space between page footnotes and bottom info panel
 \blfootnote{}
 
 \section{Programming/Scripting Languages}
-\cvitem{Java}{8 years}
+\cvitem{Java}{11 years}
 \cvitem{Pascal}{3 years}
 \cvitem{NSIS}{1 year}
 \cvitem{MS Visual Basic}{1 year}
@@ -261,6 +281,7 @@
   }
 
 \section{Relevant Conferences Attended}
+\conference{15/06/2013}{GoogleIO}{https://developers.google.com/events/io}
 \conference{27/06/2012}{GoogleIO}{https://developers.google.com/events/io}
 \conference{13/02/2012}{JFokus}{http://www.jfokus.se}
 \conference{06/10/2011}{Droidcon}{http://uk.droidcon.com}
@@ -305,18 +326,17 @@
 %-----       letter       ---------------------------------------------------------
 % recipient data
 \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-\date{January 01, 1984}
+\date{August 29, 2013}
 \opening{Dear Sir or Madam,}
 \closing{Yours faithfully,}
 \enclosure[Attached]{curriculum vit\ae{}}     % use an optional argument to use a string other than "Enclosure", or redefine \enclname
 \makelettertitle
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra ti
 
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris
 
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a a
 
 \makeletterclosing
 
